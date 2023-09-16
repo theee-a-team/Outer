@@ -2,7 +2,7 @@
 document.getElementById("start").addEventListener("click", function() {
     document.getElementById("eyes1").classList.add("eyes")
     document.getElementById("eyes2").classList.add("eyes")
-    setTimeout(overlayFadeOut, 500)
+    setTimeout(overlayFadeOut, 2000)
     setInterval(backgroundChanger, 7500);
 });
 
