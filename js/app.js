@@ -29,10 +29,13 @@ function randomImageNo() {
     let newRandomIndex = Math.floor(Math.random() * 10)
     if (newRandomIndex === randomImageIndex) {
         Math.floor(Math.random() * 10);
-        randomImageIndex = newRandomIndex;
-        return newRandomIndex
-        
+        if (newRandomIndex === randomImageIndex) {
+            Math.floor(Math.random() * 10);
+            randomImageIndex = newRandomIndex;
+            return newRandomIndex;
     } else {
+        return newRandomIndex
+    }} else {
         return newRandomIndex
     }
 }
