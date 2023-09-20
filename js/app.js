@@ -2,12 +2,14 @@
 //     document.getElementById("eyes1").classList.add("eyes")
 //     document.getElementById("eyes2").classList.add("eyes")
 //     setTimeout(overlayFadeOut, 2000)
-//     setInterval(backgroundChanger, 7500);
+//     
 // });
 
 // function overlayFadeOut() {
 //     $("#overlay").fadeOut(600);
 // }
+
+setInterval(backgroundChanger, 7500);
 
 var images = [
     'url("img/1.jpg")',
