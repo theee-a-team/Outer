@@ -28,15 +28,17 @@ let randomImageIndex = 0;
 function randomImageNo() {
     let newRandomIndex = Math.floor(Math.random() * 10)
     if (newRandomIndex === randomImageIndex) {
-        Math.floor(Math.random() * 10);
+        let newRandomIndex = Math.floor(Math.random() * 10);
         if (newRandomIndex === randomImageIndex) {
-            Math.floor(Math.random() * 10);
+            let newRandomIndex = Math.floor(Math.random() * 10);
             randomImageIndex = newRandomIndex;
             return newRandomIndex;
     } else {
+        randomImageIndex = newRandomIndex;
         return newRandomIndex
     }} else {
-        return newRandomIndex
+        randomImageIndex = newRandomIndex;
+        return newRandomIndex;
     }
 }
     
