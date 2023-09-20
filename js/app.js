@@ -1,6 +1,3 @@
-
-document.onload.location.reload(true)
-
 document.getElementById("start").addEventListener("click", function() {
     document.getElementById("eyes1").classList.add("eyes")
     document.getElementById("eyes2").classList.add("eyes")
