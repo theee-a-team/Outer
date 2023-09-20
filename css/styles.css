@@ -46,7 +46,8 @@ main {
 
 #main-logo-div {
     display:inline-block;
-    width: 50%;
+    width: 15%;
+    max-width: 200px;
 }
 
 #main-logo {
