@@ -23,27 +23,20 @@ var images = [
     'url("img/9.jpg")',
 ]
 
-let randomImageIndex = 0;
+let ImageIndex = 0;
 
-function randomImageNo() {
-    let newRandomIndex = Math.floor(Math.random() * 10)
-    if (newRandomIndex === randomImageIndex) {
-        let newRandomIndex = Math.floor(Math.random() * 10);
-        if (newRandomIndex === randomImageIndex) {
-            let newRandomIndex = Math.floor(Math.random() * 10);
-            randomImageIndex = newRandomIndex;
-            return newRandomIndex;
-    } else {
-        randomImageIndex = newRandomIndex;
-        return newRandomIndex
-    }} else {
-        randomImageIndex = newRandomIndex;
-        return newRandomIndex;
-    }
+function ImageNo() {
+        if(ImageIndex<images.length-1) {
+            ImageIndex++
+        } else {
+            ImageIndex = 0;
+        }
+    console.log(ImageIndex);
+    return ImageIndex;
 }
-    
+
 function backgroundChanger() {
-        $("#test").fadeOut(750, () => {document.getElementById('test').style.backgroundImage = images[randomImageNo()]});
+        $("#test").fadeOut(750, () => {document.getElementById('test').style.backgroundImage = images[ImageNo()]});
         $("#test").fadeIn(750);
     } 
         
